@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center; /* Centers text in body */
+}
+
+h1 {
+  text-align: center; /* Already centered */
+}
+
+ul {
+  padding-left: 0;
+  list-style-type: none; /* Remove bullets */
+  margin: 0 auto;
+  width: 70%; /* Increase the width for a more open feel */
+  display: flex; /* Use flexbox to center items */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+li {
+  display: flex; /* Align number and text horizontally */
+  justify-content: center; /* Center the items */
+  align-items: baseline; /* Align number and heading on the same line */
+  margin-bottom: 20px; /* Add more space between items */
+  width: 100%; /* Make li take full width */
+}
+
+.post-number {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 0; /* No margin to eliminate gaps */
+}
+
+.post-number::after {
+  content: '.'; /* Add a full stop after the number */
+  margin-left: 0; /* No margin on the left of the period */
+}
+
+.post-content {
+  text-align: center; /* Center the content in the post */
+}
+
+.post-content h2 {
+  margin: 0; /* No margin to eliminate gaps */
+  font-size: 24px;
+  display: inline; /* Keep heading inline to avoid gaps */
+}
+
+.post-content p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
+}
